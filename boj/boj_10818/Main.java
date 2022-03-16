@@ -5,10 +5,10 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         
         int inputLength = scanner.nextInt();
-        int minNumber = scanner.nextInt();
-        int maxNumber = minNumber;
+        int minNumber = Integer.MAX_VALUE;
+        int maxNumber = Integer.MIN_VALUE;
         
-        for (int i = 1; i < inputLength; i++) {
+        for (int i = 0; i < inputLength; i++) {
             int nextNumber = scanner.nextInt();
             minNumber = Math.min(minNumber, nextNumber);
             maxNumber = Math.max(maxNumber, nextNumber);
